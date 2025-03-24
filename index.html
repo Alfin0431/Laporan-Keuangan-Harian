@@ -149,6 +149,31 @@
                 }
             });
         });  
+        document.querySelector(".btn-primary").addEventListener("click", function () {
+        const { jsPDF } = window.jspdf;
+        const doc = new jsPDF();
+        
+        let tanggal = document.getElementById("tanggal").value || new Date().toISOString().split('T')[0];
+        
+        doc.setFontSize(16);
+        doc.text(`Laporan Keuangan Harian - ${tanggal}`, 20, 20);
+        
+        let y = 30;
+        doc.setFontSize(12);
+        doc.text("Tanggal | Keterangan | Pemasukan | Pengeluaran | Saldo", 20, y);
+        y += 10;
+
+        const rows = document.querySelectorAll("#dataKeuangan tr");
+        rows.forEach((row) => {
+            const cols = row.querySelectorAll("td");
+            let rowData = [];
+            cols.forEach((col) => rowData.push(col.innerText));
+            doc.text(rowData.join(" | "), 20, y);
+            y += 10;
+        });
+
+        doc.save(`Laporan_Keuangan_${tanggal}.pdf`);
+    });
     </script>
 
     
