@@ -61,7 +61,7 @@
         <tbody id="dataKeuangan"></tbody>
     </table>
     <script>
-         document.addEventListener("DOMContentLoaded"), function () {
+         document.addEventListener("DOMContentLoaded", function () {
             let totalPemasukan = 0;
             let totalPengeluaran = 0;
             let saldoAkhir = 0;
@@ -119,8 +119,36 @@
                 inputKeterangan.value = "";
                 inputJumlah.value = "";
             });
-         }
 
+            btnHapusSemua.addEventListener("click", function () {
+                dataKeuangan.innerHTML = "";
+                totalPemasukan = 0;
+                totalPengeluaran = 0;
+                saldoAkhir = 0;
+                document.getElementById("totalPemasukan").innerText = "0";
+                document.getElementById("totalPengeluaran").innerText = "0";
+                document.getElementById("saldoAkhir").innerText = "0";
+            });
+            
+            btnHapusBaris.addEventListener("click", function () {
+                if (dataKeuangan.lastChild) {
+                    const lastRow = dataKeuangan.lastChild;
+                    const cells = lastRow.children;
+                    const pemasukan = parseFloat(cells[2].innerText.replace(/,/g, "")) || 0;
+                    const pengeluaran = parseFloat(cells[3].innerText.replace(/,/g, "")) || 0;
+                    
+                    totalPemasukan -= pemasukan;
+                    totalPengeluaran -= pengeluaran;
+                    saldoAkhir = saldoAkhir - pemasukan + pengeluaran;
+                    
+                    dataKeuangan.removeChild(lastRow);
+                    
+                    document.getElementById("totalPemasukan").innerText = totalPemasukan.toLocaleString();
+                    document.getElementById("totalPengeluaran").innerText = totalPengeluaran.toLocaleString();
+                    document.getElementById("saldoAkhir").innerText = saldoAkhir.toLocaleString();
+                }
+            });
+        });  
     </script>
 
     
