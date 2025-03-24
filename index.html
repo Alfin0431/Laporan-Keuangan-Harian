@@ -61,7 +61,65 @@
         <tbody id="dataKeuangan"></tbody>
     </table>
     <script>
+         document.addEventListener("DOMContentLoaded"), function () {
+            let totalPemasukan = 0;
+            let totalPengeluaran = 0;
+            let saldoAkhir = 0;
+            
+            const inputTanggal = document.getElementById("tanggal");
+            const inputKeterangan = document.getElementById("Keterangan");
+            const inputTipe = document.getElementById("tipe");
+            const inputJumlah = document.getElementById("jumlah");
+            const dataKeuangan = document.getElementById("dataKeuangan");
+            
+            const btnTambah = document.querySelector(".btn-success");
+            const btnHapusSemua = document.querySelector(".btn-danger");
+            const btnHapusBaris = document.querySelector(".btn-warning");
+            
+            btnTambah.addEventListener("click", function () {
+                const tanggal = inputTanggal.value;
+                const keterangan = inputKeterangan.value;
+                const tipe = inputTipe.value;
+                const jumlah = parseFloat(inputJumlah.value);
 
+                if (!tanggal || !keterangan || isNaN(jumlah) || jumlah <= 0) {
+                    alert("Harap isi semua data dengan benar!");
+                    return;
+                }
+
+                let pemasukan = 0;
+                let pengeluaran = 0;
+                
+                if (tipe === "Pemasukan") {
+                    pemasukan = jumlah;
+                    totalPemasukan += jumlah;
+                    saldoAkhir += jumlah;
+                } else {
+                    pengeluaran = jumlah;
+                    totalPengeluaran += jumlah;
+                    saldoAkhir -= jumlah;
+                }
+
+                const newRow = document.createElement("tr");
+                newRow.innerHTML = `
+                    <td>${tanggal}</td>
+                    <td>${keterangan}</td>
+                    <td>${pemasukan > 0 ? pemasukan.toLocaleString() : "-"}</td>
+                    <td>${pengeluaran > 0 ? pengeluaran.toLocaleString() : "-"}</td>
+                    <td>${saldoAkhir.toLocaleString()}</td>
+                `;
+                
+                dataKeuangan.appendChild(newRow);
+                
+                document.getElementById("totalPemasukan").innerText = totalPemasukan.toLocaleString();
+                document.getElementById("totalPengeluaran").innerText = totalPengeluaran.toLocaleString();
+                document.getElementById("saldoAkhir").innerText = saldoAkhir.toLocaleString();
+                
+                inputTanggal.value = "";
+                inputKeterangan.value = "";
+                inputJumlah.value = "";
+            });
+         }
 
     </script>
 
