@@ -13,7 +13,7 @@ Proyek ini hanya berbentuk sebuah website sehingga pengguna dapat menggunakannya
 - Opera
 
 ## Installation
-Berikut ada bagaimana cara menggunakan proyek Lapora Keuangan Harian : 
+Berikut ada bagaimana cara menggunakan proyek Laporan Keuangan Harian : 
 1. Jika anda ingin menggunakan (mengunjungi) langsung website proyek silahkan klik link dibawah ini :
     - -->  https://alfin0431.github.io/Laporan-Keuangan-Harian/
 2. Jika anda ingin menggunakan proyek secara lokal di perangkat anda ikuti cara dibawah ini :
