@@ -32,6 +32,8 @@ Jika ada pertanyaan yang ingin ditanyakan silahkan contact :
 ## Documentation 
 Berikut adalah tampilan dari proyek Laporan Keuangan Harian :
 ![image](https://github.com/user-attachments/assets/53088bd8-e371-4b7c-8654-5e0ec5fe79b8)
+![image](https://github.com/user-attachments/assets/face0717-fc29-49b8-89ef-dc55b0cb2d84)
+
 
     
    
