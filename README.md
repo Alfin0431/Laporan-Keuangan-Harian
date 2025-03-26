@@ -31,7 +31,7 @@ Jika ada pertanyaan yang ingin ditanyakan silahkan contact :
 
 ## Documentation & Tutor 
 Berikut adalah tampilan dari proyek Laporan Keuangan Harian :
-![image](https://github.com/user-attachments/assets/53088bd8-e371-4b7c-8654-5e0ec5fe79b8)
+![image](https://github.com/user-attachments/assets/95d6aebe-5eb6-4575-b705-ce219ec3876c)
 ![image](https://github.com/user-attachments/assets/544386af-c121-45c2-ac14-609a468705af)
 1. Masukan Terlebih dahulu data yang dibutuhkan Seperti Tanggal, Keterangan, Jenis Transaksi, dan Nominal
 2. Kemudian Tambahkan data yang telah diisi dengan meng-klik tombol "Tambah Transaksi"
