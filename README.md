@@ -33,9 +33,9 @@ Jika ada pertanyaan yang ingin ditanyakan silahkan contact :
 Berikut adalah tampilan dari proyek Laporan Keuangan Harian :
 ![image](https://github.com/user-attachments/assets/95d6aebe-5eb6-4575-b705-ce219ec3876c)
 ![image](https://github.com/user-attachments/assets/544386af-c121-45c2-ac14-609a468705af)
-1. Masukan Terlebih dahulu data yang dibutuhkan Seperti Tanggal, Keterangan, Jenis Transaksi, dan Nominal
+1. Masukan Terlebih dahulu data yang dibutuhkan Seperti Tanggal, Keterangan, Tipe Transaksi, dan Nominal
 2. Kemudian Tambahkan data yang telah diisi dengan meng-klik tombol "Tambah Transaksi"
-3. Jika Ingin Menghapus data yang telah diinput Silahkan meng-klik tombol "Hapus Baris Terakhir" & "Hapus Semua"
+3. Jika Ingin Menghapus data yang telah diinput Silahkan meng-klik tombol "Hapus Baris Terakhir" atau "Hapus Semua"
 4. Jika ingin menyimpan transaksi yang telah ada silahkan mmeng-klik tombol "Simpan Pdf"
    
 
