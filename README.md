@@ -18,7 +18,7 @@ Berikut adalah bagaimana cara menggunakan proyek Laporan Keuangan Harian :
     - -->  https://alfin0431.github.io/Laporan-Keuangan-Harian/
 2. Jika anda ingin menggunakan proyek secara lokal di perangkat anda ikuti cara dibawah ini :
     - Download file proyek Laporan Keuangan Harian dengan meng-klik code bewarna hijau dan akan muncul tampilan seperti dibawah ini
-    - ![image](https://github.com/user-attachments/assets/ac364b4d-e4f1-457d-8586-d083e69e67f1)
+         ![image](https://github.com/user-attachments/assets/ac364b4d-e4f1-457d-8586-d083e69e67f1)
     - Ekstrak file yang telah di download 
     - Buka aplikasi Visual Studio Code
     - Open folder file yang telah di ekstrak pada Visual Studio Code
